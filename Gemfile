@@ -15,6 +15,8 @@ gem "sprockets-rails"
 gem "stimulus-rails"
 gem "turbo-rails"
 
+
+
 gem "image_processing", "~>1.2"
 
 group :development, :test do
@@ -36,3 +38,4 @@ group :test do
 end
 
 gem "tzinfo-data"
+gem "devise"
