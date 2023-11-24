@@ -7,6 +7,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # GET /resource/sign_up
   def new
     super
+    @user = User.new
   end
 
   # POST /resource
@@ -15,9 +16,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   # GET /resource/edit
-  def edit
-    super
- end
+  # def edit
+  #   super
+  # end
 
   # PUT /resource
   def update
