@@ -3,18 +3,18 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: 5433
+  username: csapp_db_admin
+  password: admin
+  host: localhost
 
 development:
   <<: *default
   database: comp_shop_app_development
-  username: csapp_db_admin
-  password: admin
-  host: localhost
+
 
 test:
   <<: *default
   database: comp_shop_app_test
-  username: csapp_db_admin
-  password: admin
-  host: localhost
+
 
