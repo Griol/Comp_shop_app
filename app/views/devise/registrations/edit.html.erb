@@ -13,6 +13,17 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :fname %><br />
+    <%= f.text_field :fname, autocomplete: "fname" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lname %><br />
+    <%= f.text_field :lname, autocomplete: "lname" %>
+  </div>
+
+
+  <div class="field">
     <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
     <% if @minimum_password_length %>
