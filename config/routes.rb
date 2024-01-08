@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   #root to: 'home#index'
 
   root "product#index"
+  resources :product
 
-  get "/product", to: "product#index"
-  get "/product/:id", to: "product#show"
 end

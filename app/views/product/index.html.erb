@@ -5,9 +5,8 @@
 <ul>
   <% @product.each do |product| %>
     <li>
-    <a href="/product/<%= product.id %>">
-      <%= product.name %>
+    <%= link_to product.name, product %>
     </li>
-
   <% end %>
 </ul>
+<%= link_to "New product", new_product_path %>
