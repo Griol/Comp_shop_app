@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   root "product#index"
 
   get "/product", to: "product#index"
-
+  get "/product/:id", to: "product#show"
 end
