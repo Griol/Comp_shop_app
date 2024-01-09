@@ -39,3 +39,4 @@ end
 
 gem "tzinfo-data"
 gem "devise"
+gem "action_policy"

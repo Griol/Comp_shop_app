@@ -14,4 +14,6 @@
     </li>
   <% end %>
 </ul>
+<% if allowed_to?(:update?, @product) %>
 <%= link_to "New product", new_product_path %>
+<% end %>

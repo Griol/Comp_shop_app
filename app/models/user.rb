@@ -7,5 +7,6 @@ class User < ApplicationRecord
     validates :lname, presence: true, length: {maximum: 100}
     validates :email, presence: true, length: {maximum: 150}
     validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
-end
+    enum :role, { buyer: 0, admin: 1}
+  end
 
