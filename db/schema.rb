@@ -20,7 +20,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_08_224819) do
   end
 
   create_table "line_items", force: :cascade do |t|
-    t.integer "quantity"
+    t.integer "quantity", default: 1, null: false
     t.integer "product_id"
     t.integer "cart_id"
     t.datetime "created_at", null: false

@@ -1,7 +1,7 @@
 class CreateLineItems < ActiveRecord::Migration[7.1]
   def change
     create_table :line_items do |t|
-      t.integer :quantity, , null: false, default: 0
+      t.integer :quantity, default: 1, null: false
       t.integer :product_id
       t.integer :cart_id
 
